@@ -47,7 +47,7 @@
       </div>
     </nav>
     <nuxt/>
-    <footer class="footer">
+    <footer class="footer has-text-light">
       <div class="columns">
         <div class="column">
           <p>Dane firmy</p>
