@@ -23,22 +23,47 @@
         class="navbar-menu"
       >
         <div class="navbar-end">
-          <a class="navbar-item">
+          <nuxt-link
+            class="navbar-item"
+            to="/offer">
             Oferta
-          </a>
-          <a class="navbar-item">
+          </nuxt-link>
+          <nuxt-link
+            class="navbar-item"
+            to="/projects">
             Wykonane Realizacje
-          </a>
-          <a class="navbar-item">
+          </nuxt-link>
+          <nuxt-link
+            class="navbar-item"
+            to="/about-us">
             O Firmie
-          </a>
-          <a class="navbar-item">
+          </nuxt-link>
+          <nuxt-link
+            class="navbar-item"
+            to="/contact">
             Kontakt
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </nav>
     <nuxt/>
+    <footer class="footer">
+      <div class="columns">
+        <div class="column">
+          <p>Dane firmy</p>
+          <p>Adres...</p>
+          <p>Telefon...</p>
+          <p>Nip...</p>
+          <p>Nazwa...</p>
+        </div>
+        <div class="column is-three-quarters">
+          Znajdź nas na Facebooku
+          <span class="icon">
+            <i class="fab fa-facebook"/>
+          </span>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
