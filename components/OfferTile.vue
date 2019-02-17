@@ -1,9 +1,11 @@
 <template>
   <div class="card offer-tile">
     <div class="card-header-title">
-      <h2 class="title is-3 has-text-dark">Lorem Ipsum</h2>
+      <h2 class="title is-3 has-text-dark">{{ title }}</h2>
     </div>
-    <div class="card-image">
+    <div
+      v-if="imgSrc"
+      class="card-image">
       <figure class="image is-4by3">
         <img
           :src="imgSrc"
@@ -12,7 +14,11 @@
     </div>
     <div class="card-content">
       <div class="content has-text-dark">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <ul>
+          <li
+            v-for="(item, index) in items"
+            :key="index">{{ item }}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -23,7 +29,15 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: 'https://via.placeholder.com/400x300?text=Moja Oferta'
+      default: ''
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    items: {
+      type: Array,
+      default: () => []
     }
   }
 }

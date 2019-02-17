@@ -4,8 +4,7 @@
       <div class="navbar-brand">
         <nuxt-link
           class="navbar-item"
-          to="/">LOGO</nuxt-link>
-
+          to="/">Instalacje Elektryczne - Bartosz Flieger</nuxt-link>
         <a
           role="button"
           class="navbar-burger burger"
@@ -50,17 +49,24 @@
     <footer class="footer has-text-light">
       <div class="columns">
         <div class="column">
-          <p>Dane firmy</p>
-          <p>Adres...</p>
-          <p>Telefon...</p>
-          <p>Nip...</p>
-          <p>Nazwa...</p>
+          <p class="subtitle is-5 has-text-light">Dane firmy</p>
+          <p>
+            <span class="is-block">ul. Zofii Nałkowskiej 55/28</span>
+            <span class="is-block">60-573 Poznań</span>
+          </p>
+          <p>+48 665 414 109</p>
+          <p>Nip: 7881947653</p>
+          <p>Zakład ogólno-budowlany elektryczno-pomiarowy Bartosz Flieger</p>
         </div>
-        <div class="column is-three-quarters">
-          Znajdź nas na Facebooku
-          <span class="icon">
-            <i class="fab fa-facebook"/>
-          </span>
+        <div class="column is-three-quarters has-text-right-desktop has-text-right-tablet">
+          <a
+            href="https://www.facebook.com/instalacjeelektrycznebartoszflieger/"
+            target="_blank">
+            <span class="icon">
+              <i class="fab fa-facebook"/>
+            </span>
+            Znajdź nas na Facebooku
+          </a>
         </div>
       </div>
     </footer>
